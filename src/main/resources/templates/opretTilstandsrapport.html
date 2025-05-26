@@ -45,9 +45,11 @@
     </ul>
 </nav>
 <!-- SLUT MENUBAR -->
+<div class="intro-tsformular">
+    <h1>Opret Tilstandsrapport</h1>
+</div >
 
-<h1>Opret Tilstandsrapport</h1>
-
+<div class="ts-formular">
 <form th:action="@{/tilstandsrapport/gem}" th:object="${rapport}" method="post">
 
     <label for="bilId">Bil ID (nummer)</label>
@@ -69,7 +71,7 @@
     <button type="submit">Gem</button>
 
 </form>
-
+</div>
 <div class="tilbage-knap">
     <a href="/tilstandsrapport"><button>Tilbage</button></a>
 </div>
